@@ -1,0 +1,5 @@
+Task: create a virtual machine in VirtualBox under specific instructions and then set up an own operating system while implementing strict rules.
+
+Turn in: signature.txt file at the root of the repository. Signiture of the machine's virtual disk needs to be in the file.
+	To get this signature:
+	- open default installation folder  
