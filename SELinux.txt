@@ -5,3 +5,11 @@ Security-Enchanced Linux (SELinux) is a Linux kernel security module that provid
 
 SELinux is a set of kernel modifications and user-space tools that have been added to various Linux distributions. Its architecture strives to separate enforcement of security decisions from the
 security policy, and streamlines the amount of software involved with security policy enforcement.
+
+In the case of file systems, mapping between files and the security contexts is called labeling. The labeling is defined in policy files but can also be manually adjusted without changing the policies.
+Typical policy rules consists of explicit permissions, for example, which domains the user must possess to perform certain actions with the given target. More complex mappings are also possible, involving
+roles and security levels.
+A typical policy consists of a mapping file, a rule file, and an interface file, that define the domain transition. These three files must be compiled together with the SELinux tools to produce a single
+policy file. The resulting policy file can be loaded into the kernel to make it active. Loading and unloading policies does not require a reboot. The policy files are either hand written or can be
+generated from the more user friendly SELinux management tool. They are normally tested in permissive mode first, where violations are logged but allowed. The audit2allow tool can be used later to
+produce additional rules that extend the policy to allow all legitimate activities of the application being confined.
