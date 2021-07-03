@@ -1,0 +1,4 @@
+Security-Enchanced Linux (SELinux) is a Linux kernel security module that provides a mechanism for supporting access control security policies, including mandatory access controls (MAC)
+	// access control: selective restriction of access to a place or other resource, while access management describes the process
+	// permission to access a resource is called authorization
+	// MAC: refers to a type of access control by which the OS or DB constrains the ability of a subject or initiator to access or generally perform some sort of operation on an object or target.

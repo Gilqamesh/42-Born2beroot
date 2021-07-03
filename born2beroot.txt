@@ -9,7 +9,7 @@ Turn in: signature.txt file at the root of the repository. Signiture of the mach
 	- retrieve the signature from the .vdi file of your virtual machine in sha1 format with the following command: shasum <filename>, example output: 6e657c4619944be17df3c31faa030c25e43e40af // .
 
 Mandatory part: Set up first server by following specific rules
-As an operating system, I'll use Debian as I'm new to system administration // !
+As an operating system, I'll use Debian as I'm new to system administration // .
 	- SELinux must be running at startup and its configuration has to be adapted for the project's needs. // !
 	- AppArmor for Debian must be running at startup too. // !
 	- Must create at least 2 encrypted partitions using LVM. Find example on this in the pdf (page 5) // !
