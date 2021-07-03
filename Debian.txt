@@ -1,0 +1,10 @@
+Debian (aka Debian GNU/Linux) is a linux distributed established by Ian Murdock in 1993. One of the oldest OS based on the Linux kernel.
+The Debian Stable branch is the most popular edition for personal computers and servers. Debian is also the basis for many other distributions, most notably Ubuntu.
+Three branches of Debian are regularly maintained:
+	- Stable (need to use in project): current release and targets stable and well-tested software needs. Its made by freezing Testing for a few months where bugs are fixed and packages
+		with too many bugs are removed; then the resulting system is released as stable.
+	- Testing: preview branch that will eventually become the next major release. The packages in this branch have had some testing in unstable but they may not be fit for release yet.
+		It contains newer packages than Stable but older than Unstable.
+	- Unstable: always codenamed 'sid', is the trunk (refers to the unnamed branch - version - of a file tree under revision control). Packages are accepted without checking the distribution as a whole.
+		This branch is usually run by software developers who participate in a project and need the latest libraries available, and by those who prefer bleeding-edge (technology so new that they could
+		have a high risk of being unreliable and lead adopters to incur greater expense in order to make use of them) software.
