@@ -13,3 +13,13 @@ iptables for configuration. UFW is available by default in all Ubuntu installati
 	// Rootkit: collection of computer software, typically malicious, designed to enable access to a computer or an area of its software that is not otherwise allowed and often masks its existance or the
 	//	existance of other software.
 
+Basic usage:
+	Example on how to enable firewall, allow ssh access, enable logging, and check the status of the firewall, perform:
+		$ sudo ufw allow ssh/tcp
+		$ sudo ufw logging on
+		$ sudo ufw enable
+		$ sudo ufw status
+		Firewall loaded
+		
+		This sets up a default deny (DROP) firewall for incoming connections, with all outbound connections allowed with state tracking.
+		

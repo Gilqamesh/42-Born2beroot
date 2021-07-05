@@ -5,7 +5,7 @@ root file systems on a logical volume.
 	//	partitioning schemes to store volumes.
 
 Uses:
-	- Creating single logical volumes of multiple physial volumes or entire hard disks, allowing for dynamic volume resizing.
+	- Creating single logical volumes of multiple physical volumes or entire hard disks, allowing for dynamic volume resizing.
 	- Managing large hard disk farms by allowing disks to be added and replaced without downtime or service disruption, in combination with hot swapping
 		// Hot swapping: is the replacement or addition of components to a computer system without stopping, shutting down, or rebooting the system.
 	- On small systems (like a desktop), instead of having to estimate at installation time how big a partition might need to be, LVM allows filesystems to be easily resized as needed.

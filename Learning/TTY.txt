@@ -1,0 +1,2 @@
+TTY (Teletypewriter) mode:
+Used as a way to communicate for people with speech and hearing impairments.

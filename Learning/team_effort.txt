@@ -1,0 +1,2 @@
+Shift + Command + C  - in finder directory of machine
+Macintosh / goinfre / <profile_name>     -   only stored on local machine
