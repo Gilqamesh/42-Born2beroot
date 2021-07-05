@@ -1,2 +1,4 @@
 Shift + Command + C  - in finder directory of machine
 Macintosh / goinfre / <profile_name>     -   only stored on local machine
+Port forwarding: settings on the specific VM inside of VirtualBox -> networking -> advanced -> port forwarding
+	-> name can be whatever, host port is the host port we use on VM, Guest port 22 for ssh service

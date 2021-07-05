@@ -58,7 +58,7 @@ Display following informations:
 	- Number of users using the server
 	- IPv4 address of the server and its MAC (Media Access Control) address
 	- Number of commands executed with the sudo program
-During the defense, I'll have to explain how this script works. Also have to be able to interrupt it without modifying it. Take a look at cron // !
+During the defense, I'll have to explain how this script works. Also have to be able to interrupt it without modifying it. Take a look at cron // .
 
 
 Know difference between Debian and CentOS // understand what's the difference between them, need for defense
