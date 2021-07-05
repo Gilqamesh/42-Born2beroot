@@ -1,2 +1,40 @@
 Secure Shell Protocol (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line, login, and
 remote command execution, but any network service can be secured with SSH.
+SSH provides a secure channel over an unsecured network by using a client-server architecture, connecting an SSH client application with an SSH server. The protocol specification distinguishes
+between two major versions, referred to as SSH-1 and SSH-2. The standard TCP port for SSH is 22. SSH is generally used to access Unix-like operating systems, but it can also be used on Microsoft
+Windows. Windows 10 uses OpenSSH as its default SSH client and SSH server.
+
+SSH uses public-key cryptography to authenticate the remote computer and allow it to authenticate the user, if necessary.
+There are several ways to use SSH; one is to use automatically generated public-private key pairs to simply encrypt a network connection, and then use password authentication to log on.
+Another is to use a manually generated public-private key pair to perform the authentication, allowing users or programs to log in without having to specify a password. In this scenario, anyone can produce
+a matching pair of different keys (public and private). The public key is placed on all computers that must allow access to the owner of the matching private key (the owner keeps the private key secret).
+While authentication is based on the private key, the key itself is never transferred through the network during authentication. SSH only verifies whether the same person offering the public key also owns
+the matching private key. In all versions of SSH it is important to verify unknown public keys, i.e. associate the public keys with identities, before accepting them as valid. Accepting an attacker's
+public key without validation will authorize an unauthorized attacked as a valid user.
+
+Usage:
+SSH is typically used to log into a remote machine and execute commands, but it also supports tunneling, forwarding TCP ports and X11 connections; it can transfer files using the associated SSH file
+transfer (SFTP) or secure copy (SCP) protocols. SSH uses the client-server model.
+	// Client-server model: is a distributed application structure that partitions tasks or workloads between the providers of a resource or service, called servers, and service requesters, called clients.
+An SSH client program is typically used for establishing connections to an SSH daemon accepting remote connections. Both are commonly present on most modern operating systems.
+SSH is important in cloud computing to solve connectivity problems, avoiding the security issues of exposing a cloud-based virtual machine directly on the Internet. An SSH tunnel can provide a secure path
+over the Internet, through a firewall to a virtual machine.
+	// Cloud computing: is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user. The term is generally used to
+	//	describe data centers available to many users over the Internet.
+
+Uses:
+SSH is a protocol that can be used for many applications across many platforms including most UNIX variants, as well as Microsoft Windows. Some of the applications below may require features that are only
+available or compatible with specific SSH clients or servers. For example, using the SSH protocol to implement a VPN is possible, but presently only with the OpenSSH server and client implementation.
+	- For login to a shell on a remote host (replacing Telnet and rlogin)
+	- For executing a single command on a remote host (replacing rsh)
+	- For setting up automatic (passwordless) login to a remote server (for example, using OpenSSH)
+	- In combination with rsync to back up, copy and mirror files efficiently and securely
+	- For forwarding port
+	- For tunneling (not be confused with a VPN, which routes packets between different networks, or bridges two broadcast domains into one)
+	- For using as a full-fledged encrypted VPN. Note that only OpenSSH server and client supports this feature.
+	- For forwarding X from a remote host (possible through multiple intermediate hosts)
+	- For browsing the web through an encrypted proxy connection with SSH clients that supports the SOCKS protocol
+	- For securely mounting a directory on a remote server as a filesystem on a local computer using SSHFS
+	- For automated remote monitoring and management of servers through one or more of the mechanisms discussed above
+	- For development on a mobile or embedded device that supports SSH
+	- For securing file transfer protocols
