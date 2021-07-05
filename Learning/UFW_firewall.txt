@@ -1,0 +1,15 @@
+Uncomplicated Firewall (UFW) is a program for managing a netfilter firewall designed to be easy to use. It uses a command-line interface consisting of a small number of simple commands, and uses
+iptables for configuration. UFW is available by default in all Ubuntu installations after 8.04 LTS.
+	// Netfilter: framework provided by the Linux kernel that allows various networking-related operations to be implemented in the form of customized handlers. Netfilter offers various functions
+	//	and operations for packet filtering, network address translation, and port translation, which provide the functionality required for directing packets through a network and prohibiting packets
+	//	from reaching sensitive locations within a network.
+	//	Netfilter represents a set of hooks inside the Linux kernel, allowing specific kernel modules to register callback functions with the kernel's networking stack. Those functions, usually applied
+	//	to the traffic in the form of filtering and modification rules, are called for every packet that traverses the respective hook within the networking stack.
+	// Hook: in computer programming, the term hooking covers a range of techniques used to alter or augment the behaviour of an operating system, of applications, or of other software components by
+	//	intercepting operating system calls in order to monitor behavior or modify the function of an application or other component. It is also widely used in benchmarking programs, for example frame rate
+	//	measuring in 3D games, where the output and input is done through hooking.
+	//	Hooking can also be used by malicious code. For example, rootkits, pieces of software that try to make themselves invisible by faking the ouput of API calls that would otherwise reveal their
+	//	existance, often use hooking techniques.
+	// Rootkit: collection of computer software, typically malicious, designed to enable access to a computer or an area of its software that is not otherwise allowed and often masks its existance or the
+	//	existance of other software.
+

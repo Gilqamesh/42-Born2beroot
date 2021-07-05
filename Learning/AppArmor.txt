@@ -1,0 +1,11 @@
+AppArmor is a Linux kernel security module that allows the system administrator to restrict programs' capabilities with perprogram profiles. Profile can allow capabilities like network access,
+raw socket access, and the permission to read, write, or execute files on matching paths. AppArmor supplements the traditional Unix discretonary access control (DAC) model by providing
+mandatory access control (MAC). It has been partially include in the mainline Linux kernel since version 2.6.36 and its development has been supported by Canonical since 2009.
+	// Discretonary access control (DAC): type of access control "as a means of restricting access to objects based on the identity of subjects and/or groups to which they belong. The controls
+	// 	are discretonary in the sense that a subject with a certain access permission is capable of passing that permission (perhaps indirectly) on to any other subject (unless restrained by MAC).
+
+AppArmor is implemented using the Linux Security Modules (LSM) kernel interface. AppArmor is offered in part as an alternative to SELinux, which critics consider difficult for administrators to
+set up and maintain. Unlike SELinux, which is based on applying labels to files, AppArmor works with file paths. Proponents of AppArmor claim that it is less complex and easier for the average
+user to learn than SELinux. They also claim that AppArmor requires fewer modifications to work with existing systems. For example, SELinux requires a filesystem that supports "security labels", and
+thus cannot provide access control for files mounted via NFS. AppArmor is filesystem-agnostic.
+	// agnostic: in IT context, refers to something that is generalized so that it is interoperable among various systems.

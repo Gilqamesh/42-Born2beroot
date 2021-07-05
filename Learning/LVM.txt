@@ -1,0 +1,15 @@
+Logical Volume Manager (LVM)
+In Linux, LVM is a device mapper framework that provides logical volume management for the Linux Kernel. Most modern Linux distributions are LVM-aware to the point of being able to have their
+root file systems on a logical volume.
+	// LVM provides a method of allocating space on mass-storage devices that is more flexible - in particular, concatenate, stripe together or otherwise combine partitions - than conventional
+	//	partitioning schemes to store volumes.
+
+Uses:
+	- Creating single logical volumes of multiple physial volumes or entire hard disks, allowing for dynamic volume resizing.
+	- Managing large hard disk farms by allowing disks to be added and replaced without downtime or service disruption, in combination with hot swapping
+		// Hot swapping: is the replacement or addition of components to a computer system without stopping, shutting down, or rebooting the system.
+	- On small systems (like a desktop), instead of having to estimate at installation time how big a partition might need to be, LVM allows filesystems to be easily resized as needed.
+	- Performing consistent backups by taking snapshots of the logical volumes
+	- Encrypting multiple physical partitions with one password
+LVM can be considered as a thin software layer on top of the hard disks and partitions, which creates an abstraction of continuity and ease-of-use for managing hard driver replacement,
+repartioning and backup.

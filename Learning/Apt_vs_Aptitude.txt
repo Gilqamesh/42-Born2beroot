@@ -1,0 +1,29 @@
+** APT **
+Advance Package Tool (APT) is a free-software user interface that works with core libraries to handle the installation and removal of software on Debian, Ubuntu, and related Linux distributions.
+APT simplifies the process of managing software on Unix-like computer systems by automating the retrieval, configuration and installation of software packages, either from precompiled files or by
+compiling source code.
+
+APT is a collection of tools distributed in a package named apt. A significant part of APT is defined in a C++ library of functions; APT also includes command-line programs for dealing with packages,
+which use the library. Three such programs are apt, apt-get and apt-cache. They are commonly used in examples because they are simple and ubiquitous (mindenutt jelen van). The apt package is of important
+priority in all current Debian releases, and is therefore included in a default Debian installation. APT can be considered a front-end to dpkg, friendlier than the older dselect front-end. While dpkg
+perfors actions on individual packages, APT manages relations (especially dependencies) between them, as well as sourcing and management of higher-level versioning decisions. APT is often hailed as one
+of Debian's best features, which Debian developers attribute to the strict quality controls in Debian's policy. A major feature of APT is the way it calls dpkg - it does a topological sorting of the list
+of packages to be installed or removed and alls dpkg in the best possible sequence. In some cases, it utilizes the --force options of dpkg. However, it only does this when it is unable to calculate how
+to avoid the reason dpkg requires the action to be forced.
+
+
+** APTITUDE **
+Aptitude is an Ncurses and command-line based front-end to numerous Apt libraries, which are also used by Apt, the default Debian package manager. Aptitude is text based and run from a terminal.
+	// Ncurses (New Curses): is a programming library providing an API, allowing the programmer to write text-based user interfaces, Text User Interface (TUI), in a terminal-independent manner. It also 
+	//	optimizes screen changes, in order to reduce the latency experienced when using remote Unix shell.
+
+Uses:
+	- a mutt-like (mutt: ant dog that is a combination of different breeds) syntax for matching packages in a flexible manner
+	- mark packages as "automatically installed" or "manually installed" so that packages can be auto-removed when no longer required (available in APT too now)
+	- preview of actions about to be taken with different colors marking different actions
+	- persistance of user actions (similar to dselect)
+	- the ability to interactively retrieve and display the Debian changelog of all available official packages
+	- apt-like (i.e apt-get and apt-cache) command line module ("aptitude install foo")
+	- Score-based dependency resolver which is more suitable for interactive dependecy resolution with additional hints from the user like "I dont want that part of the solution but keep that other part
+		of the solution for your next try." Apt's dependecy resolver on the other hand is optimized for good "one shot" solutions.
+The primary command is 'aptitude'
